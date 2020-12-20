@@ -1,0 +1,697 @@
+/* setup */ 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+p,
+h1,h2,h3,h4,h5,h6
+{
+    padding: 0;
+    margin: 0;
+}
+/* End setup */ 
+
+/* start header */ 
+header {
+    
+    background-image: url(img/banner-bg.jpg);
+    height: 674px;
+}
+h1 {
+    color: #FFF;
+}
+    /* start nav */ 
+nav {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;;
+}
+header #fixed_nav {
+    position: fixed;
+    background-color: rgba(138, 144, 255, 0.9);
+    width: 100%;
+    padding: 20px 0;
+    z-index: 999;
+}
+
+nav .logo {
+    width: 163px;
+    height: 30px;
+}
+nav .logo img {
+    width: 100%;
+}
+
+nav ul li a {
+    color: #FFF;
+    padding: 0 8px 0 8px;
+    font-weight: 400px;
+    font-size: 12px;
+    text-transform: uppercase;
+    outline: none;
+}
+header nav ul .relative {
+    position: relative;
+}
+header nav ul .relative ul {
+    display: none;
+    position: absolute;
+    top: 240%;
+    background: #FFF;
+    width: 200px;
+    padding: 10px;
+}
+header nav ul .relative:hover > ul {
+    position: absolute;
+    top: 100%;
+    background: #FFF;
+    width: 200px;
+    padding: 10px;
+    display: block;
+    border-radius: 10px;
+}
+
+header nav ul .relative:hover ul li {
+    display: block;
+    padding: 10px;
+}
+header nav ul .home ul .sub-relative {
+    position: relative;
+}
+
+header nav ul .home ul .sub-relative ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: #FFF;
+    display: none;  /* target */
+}
+header nav ul .home ul .sub-relative:hover ul {
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    background: #FFF;
+    display: block; /* target */
+}
+
+    /* End nav */
+    /* start banner */
+header .banner {
+    width: 1140px;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    
+}
+header .banner .banner_text {
+    display: flex;
+    flex-flow: column;
+    width: 570px;
+    height: 307px;
+}
+header .banner .banner_text h1 {
+    font-size: 60px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+header .banner .banner_text p {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+header .banner .banner_text button {
+    width: 151px;
+    height: 43.6px;
+    background-color: white;
+    border: none;
+    transition: all 0.3s ease 0s;
+}
+header .banner .banner_text button:hover {
+    width: 151px;
+    height: 43.6px;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    cursor: pointer;
+}
+
+header .banner .banner_text button a {
+    color: #222;
+    font-weight: 500;
+}
+
+header .banner .banner_text button:hover a{
+    color: white;
+}
+
+header .banner .banner_img {
+    width: 485px;
+    height: 404px;
+}
+header .banner .banner_img img {
+    width: 100%;
+}
+
+    /* End banner */ 
+/* End header */ 
+
+/* Start Robotics */
+.robotics {
+
+}
+.rob-con {
+    max-width: 1140px;
+    padding: 120px 0;
+    margin: auto;
+}
+
+.robotics .rob-con .grid-con {
+    display: grid;
+    justify-content: center;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 255px));
+}
+.robotics .rob-con .robotics_text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.robotics .rob-con .grid-con .robot1 {
+    
+}
+.robotics .rob-con .grid-con .robot2 {
+    
+}
+.robotics .rob-con .grid-con .robot3 {
+    
+}
+.robotics .rob-con .grid-con .robot4 {
+    
+}
+
+.robotics .rob-con .grid-con .robotics_text h1 {
+    font-size: 36px;
+    color: #222222;
+    line-height: 1.2em !important;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.robotics .rob-con .grid-con .robotics_text p {
+    color: #7777;
+}
+.robotics .box .img-con {
+    width: 255px;
+    height: 261px;
+    padding: 40px;
+    position: relative;
+    background: #FFF;
+}
+.robotics .box .img-con img {
+    width: 90px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.robotics .box .robot1_content {
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+}
+.robotics .box .robot1_content button {
+    width: 154.03px;
+    height: 43.6px;
+    margin: auto;
+    background: #FFF;
+    cursor: pointer;
+    border: none;
+}
+.robotics .box .robot1_content p {
+    color: #777777;
+}
+.robotics .box .robot1_content h1 {
+    color: black;
+}
+
+.robotics .box .robot1_content button a {
+    color: black;
+    font-weight: 600;
+}
+.robotics .box .robot1_content h1,
+.robotics .box .robot1_content p
+{
+    margin-bottom: 20px;
+}
+.robotics .box {
+    display: flex;
+    flex-flow: column;
+    height: 457px;
+    text-align: center;
+    background-color: #f9f9ff;
+    box-shadow: 0px 10px 30px 0px rgba(212, 150, 255, 0.2);
+    border-radius: 10px;
+    
+}
+
+/*
+@media only screen and (max-width: 1700px){
+.rob-con {
+    max-width: 1140px;
+    padding: 120px 0;
+    margin: auto;
+}
+
+.robotics .rob-con .grid-con {
+    display: grid;
+    grid-template-columns: 255px 255px 255px 255px;
+    grid-template-rows: 131.6px auto;
+    grid-template-areas: 
+        "tex" 
+        "box1 box2 box3 box4";
+    justify-content: center;
+    grid-gap: 15px;
+}
+.robotics .rob-con .grid-con .robotics_text {
+    grid-area: tex;
+    grid-column: 1/5;
+    grid-row: 1;
+    text-align: center;
+}
+.robotics .rob-con .grid-con .robotics_text h1 {
+    font-size: 36px;
+    color: #222222;
+    line-height: 1.2em !important;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.robotics .rob-con .grid-con .robotics_text p {
+    color: #7777;
+}
+.robotics .box .img-con {
+    width: 255px;
+    height: 261px;
+    padding: 40px;
+    position: relative;
+    background: #FFF;
+}
+.robotics .box .img-con img {
+    width: 90px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.robotics .box .robot1_content {
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+}
+.robotics .box .robot1_content button {
+    width: 154.03px;
+    height: 43.6px;
+    margin: auto;
+    background: #FFF;
+    cursor: pointer;
+    border: none;
+}
+.robotics .box .robot1_content p {
+    color: #777777;
+}
+.robotics .box .robot1_content h1 {
+    color: black;
+}
+
+.robotics .box .robot1_content button a {
+    color: black;
+    font-weight: 600;
+}
+.robotics .box .robot1_content h1,
+.robotics .box .robot1_content p
+{
+    margin-bottom: 20px;
+}
+.robotics .box {
+    display: flex;
+    flex-flow: column;
+    height: 457px;
+    text-align: center;
+    background-color: #f9f9ff;
+    box-shadow: 0px 10px 30px 0px rgba(212, 150, 255, 0.2);
+    border-radius: 10px;
+    
+}
+.robotics .rob-con .grid-con.robot1 {
+    grid-area: box1;
+}
+.robotics .rob-con .grid-con.robot2 {
+    grid-area: box2;
+}
+.robotics .rob-con .grid-con.robot3 {
+    grid-area: box3;
+}
+.robotics .rob-con .grid-con.robot4 {
+    grid-area: box4;
+}
+}
+
+/*
+@media only screen and (max-width: 1139px){
+.rob-con {
+    max-width: 1140px;
+    padding: 120px 0;
+    margin: auto;
+}
+
+.robotics .rob-con .grid-con {
+    display: grid;
+    grid-template-columns: 255px 255px;
+    grid-template-areas: 
+        "tex" 
+        "box1 box2"
+        "box3 box4";
+    justify-content: center;
+    grid-gap: 15px;
+}
+.robotics .rob-con .grid-con .robotics_text {
+    grid-area: tex;
+    grid-column: 1/3;
+    grid-row: 1;
+    text-align: center;
+}
+.robotics .rob-con .grid-con .robotics_text h1 {
+    font-size: 30px;
+    color: #222222;
+    line-height: 1.2em !important;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.robotics .rob-con .grid-con .robotics_text p {
+    color: #7777;
+}
+.robotics .box .img-con {
+    width: 255px;
+    height: 261px;
+    padding: 40px;
+    position: relative;
+    background: #FFF;
+}
+.robotics .box .img-con img {
+    width: 90px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.robotics .box .robot1_content {
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+}
+.robotics .box .robot1_content button {
+    width: 154.03px;
+    height: 43.6px;
+    margin: auto;
+    background: #FFF;
+    cursor: pointer;
+    border: none;
+}
+.robotics .box .robot1_content p {
+    color: #777777;
+}
+.robotics .box .robot1_content h1 {
+    color: black;
+}
+
+.robotics .box .robot1_content button a {
+    color: black;
+    font-weight: 600;
+}
+.robotics .box .robot1_content h1,
+.robotics .box .robot1_content p
+{
+    margin-bottom: 20px;
+}
+.robotics .box {
+    display: flex;
+    flex-flow: column;
+    height: 457px;
+    text-align: center;
+    background-color: #f9f9ff;
+    box-shadow: 0px 10px 30px 0px rgba(212, 150, 255, 0.2);
+    border-radius: 10px;
+    
+}
+.robotics .rob-con .grid-con.robot1 {
+    grid-area: box1;
+}
+.robotics .rob-con .grid-con.robot2 {
+    grid-area: box2;
+}
+.robotics .rob-con .grid-con.robot3 {
+    grid-area: box3;
+}
+.robotics .rob-con .grid-con.robot4 {
+    grid-area: box4;
+}
+}
+@media only screen and (max-width: 569px){
+.rob-con {
+    max-width: 1140px;
+    padding: 120px 0;
+    margin: auto;
+}
+
+.robotics .rob-con .grid-con {
+    display: grid;
+    grid-template-columns: 255px;
+    grid-template-areas: 
+        "tex" 
+        "box1"
+        "box2"
+        "box3"
+        "box4";
+    justify-content: center;
+    grid-gap: 15px;
+}
+.robotics .rob-con .grid-con .robotics_text {
+    grid-area: tex;
+    grid-column: 1/2;
+    grid-row: 1;
+    text-align: center;
+}
+.robotics .rob-con .grid-con .robotics_text h1 {
+    font-size: 16px;
+    color: #222222;
+    line-height: 1.2em !important;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.robotics .rob-con .grid-con .robotics_text p {
+    color: #7777;
+}
+.robotics .box .img-con {
+    width: 255px;
+    height: 261px;
+    padding: 40px;
+    position: relative;
+    background: #FFF;
+}
+.robotics .box .img-con img {
+    width: 90px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.robotics .box .robot1_content {
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+}
+.robotics .box .robot1_content button {
+    width: 154.03px;
+    height: 43.6px;
+    margin: auto;
+    background: #FFF;
+    cursor: pointer;
+    border: none;
+}
+.robotics .box .robot1_content p {
+    color: #777777;
+}
+.robotics .box .robot1_content h1 {
+    color: black;
+}
+
+.robotics .box .robot1_content button a {
+    color: black;
+    font-weight: 600;
+}
+.robotics .box .robot1_content h1,
+.robotics .box .robot1_content p
+{
+    margin-bottom: 20px;
+}
+.robotics .box {
+    display: flex;
+    flex-flow: column;
+    height: 457px;
+    text-align: center;
+    background-color: #f9f9ff;
+    box-shadow: 0px 10px 30px 0px rgba(212, 150, 255, 0.2);
+    border-radius: 10px;
+    
+}
+.robotics .rob-con .grid-con .robot1 {
+    grid-area: box1;
+    grid-column: 1/2;
+}
+.robotics .rob-con .grid-con .robot2 {
+    grid-area: box2;
+    grid-column: 1/2;
+}
+.robotics .rob-con .grid-con .robot3 {
+    grid-area: box3;
+    grid-column: 1/2;
+}
+.robotics .rob-con .grid-con .robot4 {
+    grid-area: box4;
+    grid-column: 1/2;
+}
+}
+/* End Robotics */ 
+
+/* Start connection */ 
+.connection {
+    display: flex;
+    flex-flow: row;
+    padding-bottom: 100px;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+.img_con {
+    width: 759.6px;
+}
+.img_con img {
+    width: 100%;
+}
+.connection .connection_text {
+    max-width: 759.6px;
+}
+.connection .connection_text .text_con {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 30px;
+}
+.connection .connection_text .text_con h1 {
+    color: black;
+    font-size: 36px;
+}
+.connection .connection_text .text_con h4 {
+    color: #222222;
+    font-size: 16px;
+}
+.connection .connection_text .text_con .m {
+    margin-bottom: 20px;
+}
+.connection .connection_text .text_con p {
+    color: #777777;
+}
+.connection .connection_text .text_con button {
+    color: #FFF;
+    padding: 0 20px;
+    width: 143.14px;
+    height: 43.6px;
+    background-image: linear-gradient(0deg, #828fff 0%, #d496ff 100%);   
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+
+/* End connection */ 
+
+/* start cards */ 
+.cards {
+    padding: 100px 0;
+    background-image: url(img/feature-bg.jpg);
+    background-size: cover;
+}
+.cards_con {
+    max-width: 1140px;
+    margin: auto;
+}
+.cards_con .text_cards {
+    text-align: center;
+}
+.cards_con .text_cards h1 {
+    color: black;
+    font-size: 40px;
+}
+.cards_con .text_cards p {
+    color: #CCCC;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.cards .cards_con .grid_cards {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 349.99px);
+    grid-gap: 15px;
+}
+.cards .cards_con .grid_cards .c {
+    display: flex;
+    flex-flow: column;
+    max-width: 349.99px;
+    padding: 35px;
+    border-radius: 10px;
+    background-color: white;
+}
+.cards .cards_con .grid_cards .c h1 {
+    color: black;
+    margin-bottom: 10px;
+}
+.cards .cards_con .grid_cards .c p {
+    color: #777777;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End cards */ 
